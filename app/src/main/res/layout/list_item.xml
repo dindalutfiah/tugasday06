@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/foto_kosmetik"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/nama_kosmetik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Alat Kosmetik"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/jenis_kosmetik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kosmetik"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/harga_kosmetik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga Kosmetik"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/deskripsi_kosmetik"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
