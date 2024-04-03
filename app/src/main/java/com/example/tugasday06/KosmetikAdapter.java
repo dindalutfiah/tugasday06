@@ -47,11 +47,11 @@ public class KosmetikAdapter extends RecyclerView.Adapter<KosmetikAdapter.ViewHo
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, DetailKosmetik.class);
-                intent.putExtra("nama", target.getNamaKosmetik());
-                intent.putExtra("jenis", target.getJenisKosmetik());
-                intent.putExtra("harga", target.getHargaKosmetik());
-                intent.putExtra("deskripsi", target.getDeskripsiKosmetik());
-                intent.putExtra("gambar", target.getFotoKosmetik());
+                intent.putExtra("Nama", target.getNamaKosmetik());
+                intent.putExtra("Jenis", target.getJenisKosmetik());
+                intent.putExtra("Harga", target.getHargaKosmetik());
+                intent.putExtra("Deskripsi", target.getDeskripsiKosmetik());
+                intent.putExtra("Gambar", target.getFotoKosmetik());
                 context.startActivity(intent);
             }
         });
